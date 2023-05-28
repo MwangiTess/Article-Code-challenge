@@ -1,3 +1,5 @@
+# require 'pry'
+
 class Article
 
     attr_accessor :author, :magazine, :title
@@ -14,4 +16,15 @@ class Article
     def self.all
         @@all
     end
+
+    def author 
+        @author
+    end
+
+    def magazine
+        @magazine
+    end
+
 end
+
+# binding.pry

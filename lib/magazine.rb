@@ -12,4 +12,10 @@ class Magazine
     def self.all
         @@all
     end
+
+    def contributors
+        Article.all.flat_map { |article| article.magazine == self ? [article.author] : [] }
+      end
+      
 end
+

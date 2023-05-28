@@ -21,6 +21,7 @@ puts magazine2.name #Output LOving War
 puts magazine2.category #Output Romance
 
 
+
 all_magazines = Magazine.all
 puts all_magazines # Output #<Magazine:0x00005562b5de6418> #<Magazine:0x00005562b5de6328>
 
@@ -28,14 +29,15 @@ puts all_magazines # Output #<Magazine:0x00005562b5de6418> #<Magazine:0x00005562
 # Example Usage of the Article Class
 
 article1 = Article.new(author: author1, magazine: magazine1, title: "Goblet of Fire")
-puts article1.author.name # Output JK Rowling
-puts article1.magazine.name # Ouput Harry Potter
+puts article1.author  # Output JK Rowling
+puts article1.magazine  # Ouput Harry Potter
 puts article1.title # Output Goblet of Fire
 
 article2 = Article.new(author: author2, magazine: magazine2, title: "Sterling Shore")
-puts article2.author.name # Output C.M. Owens
-puts article2.magazine.category # Output Romance
+puts article2.author # Output C.M. Owens
+puts article2.magazine # Output Romance
 puts article2.title # Output Sterling Shore
+
 
 
 
