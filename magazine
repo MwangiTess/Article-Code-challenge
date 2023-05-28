@@ -1,0 +1,26 @@
+<!-- 
+Breakdown of all the functionality of the lib documents.
+
+The Magazine class: 
+
+- The initialize method sets the name and category attributes when creating a new instance of Magazine and adds it to the @@all class variable.
+- The self.all class method returns all instances of Magazine that have been created.
+- The contributors instance method uses Article.all to retrieve all articles associated with the current magazine instance. It then extracts the authors of those   articles and returns them as an array.
+- The find_by_name instance method takes a name parameter and searches for a magazine instance with a matching name in the @@all array.
+- The article_titles instance method retrieves the titles of all articles associated with the current magazine instance and returns them as an array.
+- The contributing_authors instance method retrieves the authors of all articles associated with the current magazine instance. It then filters out the authors who have contributed to less than or equal to two articles, and returns a unique array of authors.
+
+The Author class: 
+- articles: Returns an array of Article instances that the author has written. It uses the Article.all method to retrieve all articles and then filters them based on the author.
+- magazines: Returns a unique array of Magazine instances for which the author has contributed. It utilizes the articles method to retrieve the associated magazines and then removes any duplicates using uniq.
+- add_article: Creates a new Article instance and associates it with the author and the specified magazine and title.
+- topic_areas: Returns a unique array of categories of the author's magazines. It uses the magazines method to retrieve the magazines and then maps over them to extract the categories. The uniq method is used to remove any duplicate categories. 
+
+The Article class:
+- The initialize method sets the author, magazine, and title attributes when creating a new instance of Article and adds it to the @@all class variable.
+- The self.all class method returns all instances of Article that have been created.
+- The author instance method retrieves the value of the author attribute.
+- The magazine instance method retrieves the value of the magazine attribute.
+
+
+-->

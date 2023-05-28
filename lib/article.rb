@@ -1,5 +1,3 @@
-# require 'pry'
-
 class Article
 
     attr_accessor :author, :magazine, :title
@@ -26,5 +24,3 @@ class Article
     end
 
 end
-
-# binding.pry
