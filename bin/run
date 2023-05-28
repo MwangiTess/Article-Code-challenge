@@ -12,11 +12,11 @@ puts author2.name #Output C.M. Owens
 
 # Example usage of the Magazine Class 
 
-magazine1 = Magazine.new(name: "Harry Potter", category: "Fantasy Literature")
+magazine1 = Magazine.new("Harry Potter","Fantasy Literature")
 puts magazine1.name #Output Harry Potter
 puts magazine1.category # Output Fantasy Literature
 
-magazine2 = Magazine.new(name: "Loving War", category: "Romance")
+magazine2 = Magazine.new("Loving War", "Romance")
 puts magazine2.name #Output LOving War
 puts magazine2.category #Output Romance
 
