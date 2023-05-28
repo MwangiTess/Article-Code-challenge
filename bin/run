@@ -1,3 +1,8 @@
+#!/usr/bin/env ruby 
 
 require_relative '../config/environment'
 
+# Example usage of the Author Class
+
+author1 = Author.new("JK Rowling")
+puts author1.name 

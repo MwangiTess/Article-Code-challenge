@@ -1,6 +1,6 @@
+require 'bundler/setup'
+Bundler.require
+require_all 'lib'
 
-require_relative '../lib/article'
-require_relative '../lib/author'
-require_relative '../lib/magazine'
 
 
